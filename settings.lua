@@ -239,7 +239,7 @@ if PLANE_ICAO == "B733" then
 
 	clear_all_axis_assignments()
 	set_axis_assignment( 25, "flaps", "normal" )
-	set_axis_assignment( 50, "elev trim", "normal" )
+	--set_axis_assignment( 50, "elev trim", "normal" )
 	set_axis_assignment( 75, "pitch", "normal" )
 	set_axis_assignment( 76, "roll", "normal" )
 	set_axis_assignment( 78, "throttle", "normal" )
