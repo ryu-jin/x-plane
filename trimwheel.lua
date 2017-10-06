@@ -33,12 +33,12 @@ function sync_trim()
 	end
 
 	if (not_synced == 0 and ap_engaged == 0) then
-		if math.abs(trim_wheel - last_wheel_pos) > 0.0001 then
+		if math.abs(trim_wheel - last_wheel_pos) > 0.00001 then
 			xp_elv_trim = calcTrim()
 			last_wheel_pos = trim_wheel
 		end
 	elseif (not_synced == 1 and ap_engaged == 0) then
-				if math.abs(calcTrim()) - math.abs(xp_elv_trim) < 0.0001 then
+				if math.abs(calcTrim()) - math.abs(xp_elv_trim) < 0.00001 then
 					trim_sound = load_WAV_file("Resources/plugins/FlyWithLua/sounds/synchronized.wav")
 					play_sound(trim_sound)
 					not_synced = 0
